@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="mode-label">🌙 Modo Oscuro</span>
+  </div>
+
   <div class="container">
     <header>
       <h1>Ángel Jefferson Jiménez Álvarez</h1>
@@ -17,43 +25,43 @@
 
     <section>
       <h2><i class="fas fa-award"></i> Cursos Realizados</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>CCNA: Enterprise Networking</h3>
-          <p>Cisco - Dic 2024</p>
-          <a href="certificados/CCNA_Enterprise.pdf" target="_blank">Ver certificado</a>
-        </div>
-        <div class="card">
-          <h3>Network Security</h3>
-          <p>Cisco - Mayo 2025</p>
-          <a href="certificados/Network_Security.pdf" target="_blank">Ver certificado</a>
-        </div>
-        <div class="card">
-          <h3>Introducción a la Ciencia de Datos</h3>
-          <p>Cisco - Oct 2023</p>
-          <a href="certificados/Intro_Ciencia_Datos.pdf" target="_blank">Ver certificado</a>
-        </div>
-        <div class="card">
-          <h3>NDG Linux Unhatched</h3>
-          <p>Cisco - Dic 2024</p>
-          <a href="certificados/Linux_Unhatched.pdf" target="_blank">Ver certificado</a>
-        </div>
-        <div class="card">
-          <h3>Primer Respondiente</h3>
-          <p>Fundación Carlos Slim - Sep 2023</p>
-          <a href="certificados/Primer_Respondiente.pdf" target="_blank">Ver certificado</a>
-        </div>
-        <div class="card">
-          <h3>Linux Unhatched (versión internacional)</h3>
-          <p>Cisco - Dic 2024</p>
-          <a href="certificados/LinuxUnhatchedExtra.pdf" target="_blank">Ver certificado</a>
-        </div>
+      <div class="cards fade-in">
+        <div class="card"><h3>CCNA: Enterprise Networking</h3><p>Cisco - Dic 2024</p><a href="certificados/CCNA_Enterprise.pdf" target="_blank">Ver certificado</a></div>
+        <div class="card"><h3>Network Security</h3><p>Cisco - Mayo 2025</p><a href="certificados/Network_Security.pdf" target="_blank">Ver certificado</a></div>
+        <div class="card"><h3>Introducción a la Ciencia de Datos</h3><p>Cisco - Oct 2023</p><a href="certificados/Intro_Ciencia_Datos.pdf" target="_blank">Ver certificado</a></div>
+        <div class="card"><h3>NDG Linux Unhatched</h3><p>Cisco - Dic 2024</p><a href="certificados/Linux_Unhatched.pdf" target="_blank">Ver certificado</a></div>
+        <div class="card"><h3>Primer Respondiente</h3><p>Fundación Carlos Slim - Sep 2023</p><a href="certificados/Primer_Respondiente.pdf" target="_blank">Ver certificado</a></div>
+        <div class="card"><h3>Linux Unhatched (versión internacional)</h3><p>Cisco - Dic 2024</p><a href="certificados/LinuxUnhatchedExtra.pdf" target="_blank">Ver certificado</a></div>
       </div>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
+      <ul class="fade-in">
+        <li><strong>Desarrollador Full Stack</strong> en TechCompany (2024 - Presente)</li>
+        <li><strong>Prácticas Profesionales</strong> en Proyecto Cloud ITA (2023)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-cogs"></i> Habilidades</h2>
+      <ul class="fade-in">
+        <li>Desarrollo Web (HTML, CSS, JavaScript, Laravel)</li>
+        <li>Automatización con Python</li>
+        <li>Linux, Redes, Seguridad</li>
+      </ul>
     </section>
 
     <footer>
       <p>📫 Contacto: <a href="mailto:jefferson@example.com">jefferson@example.com</a></p>
     </footer>
   </div>
+
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
