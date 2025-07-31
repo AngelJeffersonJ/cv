@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV - Jefferson</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Ángel Jefferson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2d9d6c31f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Ángel Jefferson Jiménez Álvarez</h1>
-      <h2>Currículum Vitae</h2>
+      <p class="subtitle">Currículum Vitae</p>
     </header>
 
     <section>
-      <h3 onclick="toggleCursos()">📚 Cursos Realizados ⯆</h3>
-      <ul id="cursos" class="oculto">
-        <li><a href="certificados/CCNA_Enterprise.pdf" target="_blank">CCNA: Enterprise Networking, Security, and Automation</a> – Cisco (13 Dic 2024)</li>
-        <li><a href="certificados/Network_Security.pdf" target="_blank">Network Security</a> – Cisco (26 May 2025)</li>
-        <li><a href="certificados/Intro_Ciencia_Datos.pdf" target="_blank">Introducción a la Ciencia de Datos</a> – Cisco (20 Oct 2023)</li>
-        <li><a href="certificados/Linux_Unhatched.pdf" target="_blank">NDG Linux Unhatched</a> – Cisco (2 Dic 2024)</li>
-        <li><a href="certificados/Primer_Respondiente.pdf" target="_blank">Introducción a Primer Respondiente</a> – Fundación Carlos Slim (15 Sep 2023)</li>
-        <li><a href="certificados/LinuxUnhatchedExtra.pdf" target="_blank">NDG Linux Unhatched (versión internacional)</a> – Cisco (2 Dic 2024)</li>
-      </ul>
+      <h2><i class="fas fa-award"></i> Cursos Realizados</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>CCNA: Enterprise Networking</h3>
+          <p>Cisco - Dic 2024</p>
+          <a href="certificados/CCNA_Enterprise.pdf" target="_blank">Ver certificado</a>
+        </div>
+        <div class="card">
+          <h3>Network Security</h3>
+          <p>Cisco - Mayo 2025</p>
+          <a href="certificados/Network_Security.pdf" target="_blank">Ver certificado</a>
+        </div>
+        <div class="card">
+          <h3>Introducción a la Ciencia de Datos</h3>
+          <p>Cisco - Oct 2023</p>
+          <a href="certificados/Intro_Ciencia_Datos.pdf" target="_blank">Ver certificado</a>
+        </div>
+        <div class="card">
+          <h3>NDG Linux Unhatched</h3>
+          <p>Cisco - Dic 2024</p>
+          <a href="certificados/Linux_Unhatched.pdf" target="_blank">Ver certificado</a>
+        </div>
+        <div class="card">
+          <h3>Primer Respondiente</h3>
+          <p>Fundación Carlos Slim - Sep 2023</p>
+          <a href="certificados/Primer_Respondiente.pdf" target="_blank">Ver certificado</a>
+        </div>
+        <div class="card">
+          <h3>Linux Unhatched (versión internacional)</h3>
+          <p>Cisco - Dic 2024</p>
+          <a href="certificados/LinuxUnhatchedExtra.pdf" target="_blank">Ver certificado</a>
+        </div>
+      </div>
     </section>
 
     <footer>
-      <p>Contacto: <a href="mailto:jefferson@example.com">jefferson@example.com</a></p>
+      <p>📫 Contacto: <a href="mailto:jefferson@example.com">jefferson@example.com</a></p>
     </footer>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
